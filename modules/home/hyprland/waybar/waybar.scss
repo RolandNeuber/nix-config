@@ -1,0 +1,180 @@
+* {
+    font-size:15px;
+    font-family: "FiraCode Nerd Font Mono";
+    color: white;
+}
+
+window#waybar{
+    all:unset;
+}
+
+.modules-left, .modules-center, .modules-right {
+    background: black;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid cyan;
+}
+
+.modules-left {
+    margin: 10 0 0 10;
+}
+
+.modules-center {
+    margin: 10 10 0 10;
+}
+
+.modules-right {
+    margin: 10 10 0 0;
+}
+
+tooltip {
+    background: black;
+    color: gray;
+}
+
+#clock:hover, #custom-pacman:hover, #custom-notification:hover, #bluetooth:hover, #network:hover, #battery:hover, #cpu:hover, #memory:hover, #temperature:hover {
+    transition: all .3s ease;
+}
+
+#custom-notification {
+    padding: 0px 5px;
+    transition: all .3s ease;
+}
+
+#clock{
+    padding: 0px 5px;
+    transition: all .3s ease;
+}
+
+#window {
+    padding-right: 15px;
+}
+
+window#waybar.empty #window {
+    padding-right: 0;
+}
+
+#workspaces {
+    padding: 0px 5px;
+
+    button {
+        all: unset;
+        padding: 0px 5px;
+        transition: all .2s ease;
+
+        :hover {
+            border: none;
+            text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+            transition: all 1s ease;
+        }
+
+        .active {
+            border: none;
+            text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+        }
+
+        .empty {
+            border: none;
+            text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .2);
+
+            :hover {
+                border: none;
+                text-shadow: 0px 0px 1.5px rgba(0, 0, 0, .5);
+                transition: all 1s ease;
+            }
+            
+            .active {
+                border: none;
+                text-shadow: 0px 0px 2px rgba(0, 0, 0, .5);
+            }
+        }
+    }
+}
+
+
+#bluetooth{
+    padding: 0px 5px;
+    transition: all .3s ease;
+}
+
+#network{
+    padding: 0px 5px;
+    transition: all .3s ease;
+}
+
+#battery{
+    padding: 0px 5px;
+    transition: all .3s ease;
+
+    .charging {
+        color: #26A65B;
+    }
+
+    .warning:not(.charging) {
+        color: #ffbe61;
+    }
+
+    .critical:not(.charging) {
+        color: #f53c3c;
+        animation-name: blink;
+        animation-duration: 0.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+}
+
+#group-expand {
+    padding: 0px 5px;
+    transition: all .3s ease;
+}
+
+#custom-expand {
+    padding: 0px 5px;
+    transition: all .3s ease; 
+ 
+    :hover{
+        text-shadow: 0px 0px 2px rgba(255, 255, 255, .5);
+    }
+}
+
+#custom-colorpicker {
+    padding: 0px 5px;
+}
+
+#cpu, #memory, #temperature {
+    padding: 0px 5px;
+    transition: all .3s ease; 
+}
+
+#custom-endpoint {
+    color:transparent;
+    text-shadow: 0px 0px 1.5px rgba(0, 0, 0, 1);
+}
+
+#tray {
+    padding: 0px 5px;
+    transition: all .3s ease;
+
+    menu {
+        * {
+            padding: 0px 5px;
+            transition: all .3s ease; 
+        }
+
+        separator {
+            padding: 0px 5px;
+            transition: all .3s ease;
+        }
+    }
+}
+
+.modules-left, .modules-center, .modules-right {
+	border: 1px solid orange;
+	box-shadow: 0 0 3px orange;
+	margin-bottom: 3px;
+}
+
+#custom-pipewire {
+	padding-left: 5px;
+}

@@ -1,0 +1,30 @@
+.control-center {
+	border: 1px solid orange;
+	margin: 10px;
+	border-radius: 10px;
+	box-shadow: 0 0 3px orange;
+	background: black;
+
+    button {
+        border: 1px solid orange;
+        background: black;
+        border-radius: 10px;
+    }
+
+    switch {
+        border: 1px solid orange;
+        background: red;
+        border-radius: 10px;
+
+        &:checked {
+            background: lime;
+        }
+    }
+}
+
+switch slider {
+	min-height: 20px;
+	min-width: 20px;
+	margin: 0;
+	background: darkgrey;
+}
