@@ -1,10 +1,37 @@
-{ ... }:
+{ pkgs, ... }:
 {
+  home.pointerCursor = {
+    gtk.enable = true;
+    # x11.enable = true;
+    package = pkgs.bibata-cursors;
+    name = "Bibata-Modern-Classic";
+    size = 16;
+  };
+
+  gtk = {
+    enable = true;
+
+    theme = {
+      package = pkgs.flat-remix-gtk;
+      name = "Flat-Remix-GTK-Grey-Darkest";
+    };
+
+    iconTheme = {
+      package = pkgs.adwaita-icon-theme;
+      name = "Adwaita";
+    };
+
+    font = {
+      name = "Sans";
+      size = 11;
+    };
+  };
+
   programs.kitty.enable = true; # required for the default Hyprland config
   wayland.windowManager.hyprland = {
     enable = true;
-
-    config = {
+    configType = "hyprlang";
+    settings = {
       # https://wiki.hyprland.org/Configuring/Variables/#general
       general = {
         gaps_in = 5;
@@ -13,8 +40,8 @@
         border_size = 1;
 
         # https://wiki.hyprland.org/Configuring/Variables/#variable-types for info about colors
-        col.active_border = "0xFFFFA500";
-        col.inactive_border = "0xFFFFA500";
+        #col.active_border = "0xFFFFA500";
+        #col.inactive_border = "0xFFFFA500";
 
         # Set to true enable resizing windows by clicking and dragging on borders and gaps
         resize_on_border = true;
@@ -84,7 +111,7 @@
 
       # See https://wiki.hyprland.org/Configuring/Dwindle-Layout/ for more
       dwindle = {
-        pseudotile = true; # Master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
+        #pseudotile = true; # Master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
         preserve_split = true; # You probably want this
       };
 
@@ -118,7 +145,7 @@
 
       # https://wiki.hyprland.org/Configuring/Variables/#gestures
       gestures = {
-        workspace_swipe = false;
+        #workspace_swipe = false;
       };
 
       # Example per-device config
@@ -127,9 +154,7 @@
         name = "epic-mouse-v1";
         sensitivity = -0.5;
       };
-    };
 
-    settings = {
       # See https://wiki.hyprland.org/Configuring/Monitors/
       monitor = [
         "eDP-1,preferred,auto,1,mirror,HDMI-A-1"
@@ -170,6 +195,7 @@
 
       # See https://wiki.hyprland.org/Configuring/Window-Rules/ for more
       # See https://wiki.hyprland.org/Configuring/Workspace-Rules/ for workspace rules
+      /*
       windowrulev2 = [
         "float, class:nemo"
         # Ignore maximize requests from apps. You'll probably like this.
@@ -177,6 +203,7 @@
         # Fix some dragging issues with XWayland
         "nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0"
       ];
+      */
 
       # Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
       bind = [
@@ -189,7 +216,7 @@
         "$mod, F, togglefloating,"
         "$mod, R, exec, $menu"
         "$mod, P, pseudo, # dwindle"
-        "$mod, J, togglesplit, # dwindle"
+        #"$mod, J, togglesplit, # dwindle"
         "$mod, L, exec, hyprlock"
         "$mod, V, exec, cliphist list | wofi -d | cliphist decode | wl-copy && wtype -M ctrl -k v -m ctrl"
         ", F11, fullscreen"

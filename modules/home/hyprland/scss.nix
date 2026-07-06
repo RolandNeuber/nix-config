@@ -1,18 +1,16 @@
 {
-  runCommandWith,
-  sass,
+  runCommandLocal,
+  sassc,
 }:
 
 src:
 
 let
   name = builtins.baseNameOf (toString src);
-  target = builtins.replaceStrings [ ".scss" ".sass" ] [ ".css" ] name;
+  target = builtins.replaceStrings [ ".scss" ".sass" ] [ ".css" ".css" ] name;
 in
-runCommandWith {
-  name = "sass-to-css";
-  derivationArgs.nativeBuildInputs = [ sass ];
+runCommandLocal target {
+  nativeBuildInputs = [ sassc ];
 } ''
-  mkdir -p $out
-  sass ${src} "$out/${target}"
+  sassc ${src} $out
 ''

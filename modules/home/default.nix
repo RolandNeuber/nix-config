@@ -7,7 +7,8 @@
     ./element-web.nix
     ./git.nix
     ./fastfetch
-    #./hyprland
+#    ./hyprland
+    ./obsidian.nix
     ./keepassxc.nix
     ./minecraft.nix
     ./keeweb.nix

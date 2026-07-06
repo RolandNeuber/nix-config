@@ -3,7 +3,7 @@
   programs.waybar = {
     enable = true;
     style = pkgs.callPackage ../scss.nix {} ./style.scss;
-    settings = {
+    settings = [
       {
         layer = "top";
         position = "top";
@@ -67,10 +67,8 @@
           };
           actions =  {
             on-click-right = "mode";
-            on-scroll-up = "tz_up";
-            on-scroll-down = "tz_down";
-            on-scroll-up = "shift_up";
-            on-scroll-down = "shift_down";
+            on-scroll-up = [ "tz_up" "shift_up" ];
+            on-scroll-down = [ "tz_down" "shift_down" ];
           };
         };
         network = {
@@ -129,7 +127,7 @@
             transition-to-left = true;
             click-to-reveal = true;
           };
-          modules = ["custom/expand" "cpu" "memory" "temperature" "custom/endpoint"]
+          modules = ["custom/expand" "cpu" "memory" "temperature" "custom/endpoint"];
         };
         cpu = {
             format = "󰻠";
@@ -146,7 +144,7 @@
             icon-size = 14;
             spacing = 10;
         };
-      };
-    };
+      }
+    ];
   };
 }
