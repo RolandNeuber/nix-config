@@ -9,7 +9,6 @@
     ./tailscale.nix
     ./zsh.nix
     ./home_manager.nix
-    ./thunderbird.nix
     ./wake_on_lan.nix
     #./matrix-continuwuity.nix
   ];
