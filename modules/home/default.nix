@@ -20,5 +20,6 @@
     ./rhythmbox.nix
     ./vim.nix
     ./zoxide.nix
+    ./zsh.nix
   ];
 }
