@@ -19,6 +19,8 @@
 
   nixpkgs.config.allowUnfree = true;
 
+  targets.genericLinux.gpu.enable = true;
+
   imports = [
     ../../modules/home/default.nix
 #    ../../modules/home/eduroam.nix
