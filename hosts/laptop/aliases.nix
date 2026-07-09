@@ -4,7 +4,7 @@ let
 in {
   home.shellAliases = rec {
     ll = "ls -al";
-    switch = "home-manager switch --impure " + flakeLocation;
+    switch = "home-manager switch " + flakeLocation;
     update = "nix flake update " + flakeLocation + " && " + switch;
   };
 }

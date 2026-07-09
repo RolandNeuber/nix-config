@@ -9,11 +9,10 @@
     enableCompletion = true;
     autosuggestions.enable = true;
     syntaxHighlighting.enable = true;
-    shellAliases = {
+    shellAliases = rec {
       ll = "ls -al";
-      config = "sudo $EDITOR /etc/nixos/flake.nix";
       switch = "sudo nixos-rebuild switch";
-      update = "sudo nixos-rebuild switch --upgrade";
+      update = switch + " --upgrade";
     };
   };
   users.defaultUserShell = pkgs.zsh;

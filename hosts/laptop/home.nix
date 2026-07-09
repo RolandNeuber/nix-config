@@ -21,6 +21,7 @@
 
   imports = [
     ../../modules/home/default.nix
+#    ../../modules/home/eduroam.nix
     ./aliases.nix
   ];
 }
