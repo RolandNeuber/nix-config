@@ -7,7 +7,8 @@
     ./discord.nix
     ./element-web.nix
     ./element_desktop.nix
-#    ./eduroam.nix
+    ./eduroam.nix
+    ./gimp.nix
     ./git.nix
     ./development
     ./fastfetch

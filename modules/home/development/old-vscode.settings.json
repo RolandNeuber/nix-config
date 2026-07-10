@@ -1,0 +1,58 @@
+{
+    "editor.fontFamily": "'CaskaydiaCove Nerd Font', 'monospace', monospace",
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.location": "top",
+    "gitlens.codeLens.enabled": false,
+    "latex-workshop.latex.outDir": "%DIR%/out",
+    "latex-workshop.latex.clean.subfolder.enabled": true,
+    "workbench.editor.showIcons": false,
+    "workbench.editor.enablePreviewFromCodeNavigation": true,
+    "explorer.autoReveal": false,
+    "gitlens.hovers.enabled": false,
+    "terminal.integrated.fontWeightBold": "bold",
+    "terminal.external.linuxExec": "x-terminal-emulator",
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": false,
+    "git.autofetch": true,
+    "git.openRepositoryInParentFolders": "never",
+    "[typst]": {
+        "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+    },
+    "[typst-code]": {
+        "editor.wordSeparators": "`~!@#$%^&*()=+[{]}\\|;:'\",.<>/?"
+    },
+    "extensions.ignoreRecommendations": true,
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    "diffEditor.ignoreTrimWhitespace": true,
+    "continue.telemetryEnabled": false,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "rust": false
+    },
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "autopep8.args": [
+        "--max-line-length=88"
+    ],
+    "autopep8.showNotifications": "always",
+    "python.analysis.typeCheckingMode": "standard",
+    "rust-analyzer.completion.fullFunctionSignatures.enable": true,
+    "continue.showInlineTip": false,
+    "rust-analyzer.debug.engineSettings": {},
+    "rust-analyzer.cachePriming.numThreads": "physical",
+    "diffEditor.renderSideBySide": true,
+    "files.autoSave": "afterDelay",
+    "workbench.editorAssociations": {
+        "*.pdf": "pdf.preview"
+    },
+    "python.createEnvironment.trigger": "off",
+    "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^[ \\t]*(-|\\d+.))\\s*($TAGS)|todo!",
+    "rust-analyzer.check.command": "clippy",
+    "haskell.manageHLS": "GHCup",
+    "chat.disableAIFeatures": true,
+    "terminal.integrated.initialHint": false
+}
