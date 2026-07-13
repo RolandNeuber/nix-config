@@ -6,6 +6,7 @@ let
     gruntfuggly.todo-tree
     vscodevim.vim
     jnoortheen.nix-ide
+    arrterian.nix-env-selector
     #harryhopkinson.vim-theme
     #rogalmic.bash-debug
   ];
