@@ -5,6 +5,7 @@
     ./anki.nix
     ./cinnamon.nix
     ./discord.nix
+    ./direnv.nix
     ./element-web.nix
     ./element_desktop.nix
     ./eduroam.nix
@@ -13,6 +14,7 @@
     ./development
     ./fastfetch
 #    ./hyprland
+    ./htop.nix
     ./gaming
     ./japanese_keyboard.nix
     ./obsidian.nix
