@@ -5,6 +5,7 @@
     ./anki.nix
     ./cinnamon.nix
     ./discord.nix
+    ./direnv.nix
     ./element-web.nix
     ./element_desktop.nix
     ./eduroam.nix
@@ -13,16 +14,19 @@
     ./development
     ./fastfetch
 #    ./hyprland
+    ./htop.nix
     ./gaming
     ./japanese_keyboard.nix
     ./obsidian.nix
     ./keepassxc.nix
     ./keeweb.nix
+    ./libreoffice.nix
     ./syncthing.nix
     ./thunderbird.nix
     ./firefox.nix
     ./nushell.nix
     ./rhythmbox.nix
+    ./typst.nix
     ./vim.nix
     ./zoxide.nix
     ./zsh.nix
