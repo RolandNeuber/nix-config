@@ -18,7 +18,9 @@
         }
         home-manager.nixosModules.home-manager
         ./configuration.nix
-        ./modules
+        #./home.nix
+        ../../modules
+        ./aliases.nix
       ];
     };
   };

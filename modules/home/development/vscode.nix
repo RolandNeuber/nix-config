@@ -11,6 +11,7 @@ let
   ];
   commonSettings = {
     workbench.tree.indent = 24;
+    window.autoDetectColorScheme = true;
   };
 
   mkProfile = {
