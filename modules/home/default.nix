@@ -3,6 +3,7 @@
   imports = [
     ./android-tools.nix
     ./anki.nix
+    ./blender.nix
     ./cinnamon.nix
     ./discord.nix
     ./direnv.nix
