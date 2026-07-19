@@ -3,6 +3,7 @@
   imports = [
     ./android-tools.nix
     ./anki.nix
+    ./beeper.nix
     ./blender.nix
     ./cinnamon.nix
     ./discord.nix
@@ -20,7 +21,7 @@
     ./japanese_keyboard.nix
     ./obsidian.nix
     ./keepassxc.nix
-    ./keeweb.nix
+#    ./keeweb.nix
     ./libreoffice.nix
     ./syncthing.nix
     ./thunderbird.nix
