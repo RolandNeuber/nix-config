@@ -25,6 +25,7 @@
     ../../modules/home/default.nix
 #    ../../modules/home/eduroam.nix
     ./aliases.nix
+    ../../modules/home/tailscale.nix
   ];
 }
 

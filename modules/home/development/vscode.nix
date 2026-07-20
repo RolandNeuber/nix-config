@@ -4,7 +4,7 @@ let
     ms-ceintl.vscode-language-pack-de
     mechatroner.rainbow-csv
     gruntfuggly.todo-tree
-    vscodevim.vim
+    #vscodevim.vim
     jnoortheen.nix-ide
     arrterian.nix-env-selector
     #harryhopkinson.vim-theme
