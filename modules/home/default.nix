@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    ./act.nix
     ./android-tools.nix
     ./anki.nix
     ./beeper.nix
@@ -15,6 +16,7 @@
     ./git.nix
     ./development
     ./fastfetch
+    ./fluffychat.nix
 #    ./hyprland
     ./htop.nix
     ./gaming
