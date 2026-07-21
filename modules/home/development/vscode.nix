@@ -36,6 +36,9 @@ in {
           # TODO: Create PR to add
           #ranjitjhala.flux-checker
         ];
+        settings = {
+          rust-analyzer.check.command = "clippy";
+        };
       };
       haskell = mkProfile {
         extensions = [
