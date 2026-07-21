@@ -32,6 +32,7 @@
     ./rhythmbox.nix
     ./typst.nix
     ./vim.nix
+    ./ytdlp.nix
     ./zoxide.nix
     ./zsh.nix
     ./oh_my_zsh.nix
