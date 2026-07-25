@@ -7,10 +7,12 @@
     ./beeper.nix
     ./blender.nix
     ./cinnamon.nix
+    ./curl.nix
     ./discord.nix
     ./direnv.nix
     ./element-web.nix
     ./element_desktop.nix
+    ./engrampa.nix
     ./eduroam.nix
     ./gimp.nix
     ./git.nix
@@ -27,6 +29,8 @@
     ./libreoffice.nix
     ./syncthing.nix
     ./thunderbird.nix
+    ./tree.nix
+    ./wget.nix
     ./firefox.nix
     ./nushell.nix
     ./rhythmbox.nix
@@ -34,6 +38,7 @@
     ./vim.nix
     ./ytdlp.nix
     ./zoxide.nix
+    ./zip.nix
     ./zsh.nix
     ./oh_my_zsh.nix
   ];
