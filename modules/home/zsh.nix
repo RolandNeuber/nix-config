@@ -10,7 +10,5 @@
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
   };
-
-  home.shell.enableZshIntegration = pkgs.zsh;
 }
 
