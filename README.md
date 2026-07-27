@@ -25,3 +25,6 @@
 ### Install Home Manager
 
 - https://nix-community.github.io/home-manager/nix-flakes/standalone.html
+- Modify the command on the site like this:
+    - `nix run home-manager/master -- switch --flake ~/nix-config/hosts/<your host>`
+    - set `<your host>` to the name of the directory of you new flake

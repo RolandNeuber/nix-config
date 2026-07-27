@@ -22,8 +22,8 @@
   targets.genericLinux.gpu.enable = true;
 
   imports = [
-    ../../modules/home/default.nix
     ./aliases.nix
+    ../../modules/home/zsh.nix
     ../../modules/home/tailscale.nix
   ];
 }
