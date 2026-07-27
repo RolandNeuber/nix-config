@@ -14,7 +14,7 @@
     { nixpkgs, home-manager, ... }:
     let
       pkgs = import nixpkgs {
-        system = "x86_64-linux";
+        system = "aarch64-linux";
       };
     in
     {
