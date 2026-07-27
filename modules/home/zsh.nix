@@ -11,6 +11,6 @@
     syntaxHighlighting.enable = true;
   };
 
-  home.shell = pkgs.zsh;
+  home.shell.enableZshIntegration = pkgs.zsh;
 }
 
