@@ -23,10 +23,8 @@
 
   imports = [
     ./aliases.nix
-    ../../modules/home/oh_my_zsh.nix
-    ../../modules/home/zoxide.nix
-    ../../modules/home/zsh.nix
-    ../../modules/home/tailscale.nix
+    ../../modules/home/shells
+    ../../modules/home/cli/advanced/tailscale.nix
   ];
 }
 

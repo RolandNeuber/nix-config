@@ -1,0 +1,7 @@
+{ ... }:
+{
+  imports = [
+    ./advanced
+    ./basic
+  ];
+}
