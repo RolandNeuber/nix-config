@@ -6,7 +6,6 @@
     ./fastfetch
     ./gaming
     ./gui
-#    ./hyprland
     ./shells
   ];
 }

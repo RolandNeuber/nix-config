@@ -8,8 +8,8 @@
 #    ./eduroam.nix
     ./engrampa.nix
     ./firefox.nix
-    ./keepassxc.nix
-#    ./keeweb.nix
+#    ./hyprland
+    ./password_manager
     ./rhythmbox.nix
   ];
 }
