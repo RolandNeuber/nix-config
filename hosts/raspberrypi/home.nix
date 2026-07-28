@@ -25,6 +25,7 @@
     ./aliases.nix
     ../../modules/home/shells
     ../../modules/home/cli/advanced/tailscale.nix
+    ../../modules/home/cli/basic    
   ];
 }
 
