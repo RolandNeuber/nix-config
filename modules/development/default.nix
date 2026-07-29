@@ -1,8 +1,11 @@
-{ ... }:
-{
+{ config, lib, ... }:
+let 
+  capabilities = config.nixConfig.capabilities;
+in {
   imports = [
-    ./rust.nix
-    #./vim.nix
-    ./nvim.nix
+    ./act.nix
+    ./direnv.nix
+  ] ++ lib.optionals capabilities.gui [
+    ./vscode.nix
   ];
 }
