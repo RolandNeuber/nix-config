@@ -26,6 +26,8 @@
     ./obsidian.nix
     ./keepassxc.nix
 #    ./keeweb.nix
+    ./kicad.nix
+    ./freecad.nix
     ./libreoffice.nix
     ./syncthing.nix
     ./thunderbird.nix
