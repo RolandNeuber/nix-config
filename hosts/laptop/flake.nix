@@ -22,7 +22,7 @@
         inherit pkgs;
 
         modules = [ 
-          ./home.nix 
+          ../../modules
         ];
 
         # Optionally use extraSpecialArgs

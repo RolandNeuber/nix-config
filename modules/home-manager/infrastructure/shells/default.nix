@@ -1,6 +1,6 @@
 { config, lib, ... }:
 let
-  shell = config.nixConfig.shell;
+  shell = config.nixConfig.platform.shell;
 {
   imports = [
     ./zoxide.nix
