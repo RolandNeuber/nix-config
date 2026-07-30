@@ -22,10 +22,10 @@
   targets.genericLinux.gpu.enable = true;
 
   imports = [
+    ../../modules/home/cli/advanced/tailscale.nix
     ../../modules/home/default.nix
-#    ../../modules/home/eduroam.nix
+    ../../modules/home/gui/eduroam.nix
     ./aliases.nix
-    ../../modules/home/tailscale.nix
   ];
 }
 
