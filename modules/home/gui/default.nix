@@ -12,6 +12,7 @@
     ./freecad.nix
     ./kicad.nix
     ./password_manager
+    ./simple-scan.nix
     ./rhythmbox.nix
   ];
 }
