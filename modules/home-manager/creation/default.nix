@@ -1,14 +1,16 @@
 { config, lib, ... }:
 let 
-  capabilities = config.nixConfig.capabilities;
+  cfg = config.nixConfig.purpose.creation;
+  capabilities = config.nixConfig.capabilities.enable;
 in {
-  imports = lib.optionals capabilities.gui [
+  imports = [
     ./gimp.nix
     ./libreoffice.nix
     ./obsidian.nix
-  ] ++ lib.optionals (capabilities.gui && capabilities.performant) [
     ./blender.nix
     ./freecad.nix
     ./kicad.nix
   ];
+
+  config = lib.mkIf (cfg.enable && capabilities.gui) cfg.modules;
 }

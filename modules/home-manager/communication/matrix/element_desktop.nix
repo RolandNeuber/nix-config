@@ -1,6 +1,6 @@
 { ... }:
 {
   nixConfig.purpose.communication = {
-    programs.discord.enable = true;
-  }
+    programs.element-desktop.enable = true;
+  };
 }

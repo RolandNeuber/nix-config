@@ -1,8 +1,8 @@
 { pkgs, ... }:
 {
-  nixConfig.purpose.consumption.modules = {
+  nixConfig.purpose.communication = {
     home.packages = with pkgs; [
-      rhythmbox
+      fluffychat
     ];
   };
 }

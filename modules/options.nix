@@ -2,14 +2,70 @@
 {
   options.nixConfig = {
     purpose = {
-      communication    = lib.mkEnableOption "communication programs";
-      consumption      = lib.mkEnableOption "programs primarily intended for media consumption";
-      creation         = lib.mkEnableOption "programs primarily intended for media creation";
-      development      = lib.mkEnableOption "development tools";
-      infrastructure   = lib.mkEnableOption "essential tools for multi-device integration or system services" true;
-      languageLearning = lib.mkEnableOption "tools for language learning (Japanese specifically)";
-      university       = lib.mkEnableOption "programs needed only in university context";
-      utility          = lib.mkEnableOption "tools useful in many contexts, but not essential" true;
+      communication    = {
+        enable = lib.mkEnableOption "communication programs";
+        modules = lib.mkOption {
+          type = lib.types.attrs;
+          default = {};
+          internal = true;
+        };
+      };
+      consumption      = {
+        enable = lib.mkEnableOption "programs primarily intended for media consumption";
+        modules = lib.mkOption {
+          type = lib.types.attrs;
+          default = {};
+          internal = true;
+        };
+      };
+      creation         = {
+        enable = lib.mkEnableOption "programs primarily intended for media creation";
+        modules = lib.mkOption {
+          type = lib.types.attrs;
+          default = {};
+          internal = true;
+        };
+      };
+      development      = {
+        enable = lib.mkEnableOption "development tools";
+        modules = lib.mkOption {
+          type = lib.types.attrs;
+          default = {};
+          internal = true;
+        };
+      };
+      infrastructure   = {
+        enable = lib.mkEnableOption "essential tools for multi-device integration or system services" true;
+        modules = lib.mkOption {
+          type = lib.types.attrs;
+          default = {};
+          internal = true;
+        };
+      };
+      languageLearning = {
+        enable = lib.mkEnableOption "tools for language learning (Japanese specifically)";
+        modules = lib.mkOption {
+          type = lib.types.attrs;
+          default = {};
+          internal = true;
+        };
+      };
+      university       = {
+        enable = lib.mkEnableOption "programs needed only in university context";
+        modules = lib.mkOption {
+          type = lib.types.attrs;
+          default = {};
+          internal = true;
+        };
+      };
+      utility          = {
+        enable = lib.mkEnableOption "tools useful in many contexts, but not essential" true;
+        modules = lib.mkOption {
+          type = lib.types.attrs;
+          default = {};
+          internal = true;
+        };
+      };
     };
     capabilities = {
       performant = lib.mkEnableOption "performance intensive application support";

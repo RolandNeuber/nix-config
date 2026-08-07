@@ -1,8 +1,8 @@
 { pkgs, ... }:
 {
-  nixConfig.purpose.consumption.modules = {
+  nixConfig.purpose.creation.modules = {
     home.packages = with pkgs; [
-      rhythmbox
+      gimp
     ];
   };
 }

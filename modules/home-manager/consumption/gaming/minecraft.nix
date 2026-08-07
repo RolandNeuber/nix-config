@@ -2,7 +2,7 @@
 {
   nixConfig.purpose.consumption.modules = {
     home.packages = with pkgs; [
-      rhythmbox
+      prismlauncher
     ];
   };
 }

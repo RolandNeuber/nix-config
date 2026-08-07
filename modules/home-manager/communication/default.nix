@@ -1,8 +1,9 @@
 { config, lib, ... }:
 let 
-  capabilities = config.nixConfig.capabilities;
+  cfg = config.nixConfig.purpose.communication;
+  capabilities = config.nixConfig.capabilities.enable;
 in {
-  imports = lib.optionals (capabilities.gui && capabilities.networking) [
+  imports = [
     ./beeper.nix
     ./discord.nix
     ./element_desktop.nix
@@ -10,4 +11,6 @@ in {
     ./fluffychat.nix
     ./thunderbird.nix
   ];
+
+  config = lib.mkIf (cfg.enable && capabilities.gui && capabilities.networking) cfg.modules;
 }
