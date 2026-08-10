@@ -12,6 +12,8 @@
     ./freecad.nix
     ./kicad.nix
     ./password_manager
+    ./gnu-octave.nix
+    ./ladybird.nix
     ./simple-scan.nix
     ./rhythmbox.nix
   ];
