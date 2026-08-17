@@ -4,7 +4,7 @@
   users.users."roland" = {
     isNormalUser = true;
     description = "Roland Neuber";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel" "dialout" ];
     packages = with pkgs; [
     #  thunderbird
     ];

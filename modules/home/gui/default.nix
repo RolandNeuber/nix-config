@@ -14,5 +14,7 @@
     ./password_manager
     ./simple-scan.nix
     ./rhythmbox.nix
+    ./rnote.nix
+#    ./xsct.nix
   ];
 }

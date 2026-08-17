@@ -38,6 +38,8 @@ in {
         ];
         settings = {
           rust-analyzer.check.command = "clippy";
+          rust-analyzer.cargo.target = null;
+          rust-analyzer.cargo.allTargets = false;
         };
       };
       haskell = mkProfile {
