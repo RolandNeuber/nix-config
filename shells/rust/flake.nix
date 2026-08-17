@@ -29,20 +29,7 @@
         pkgs.mkShell ({
           packages = with pkgs; [
             toolchain
-            #pkg-config
-            #ffmpeg
-
-            #clang
-            #llvmPackages.libclang
-
-            #cargo-modules
-            #cargo-expand
-            #cargo-coupling
           ] ++ extraPackages;
-          #LIBCLANG_PATH = "${pkgs.llvmPackages.libclang.lib}/lib";
-          #LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
-          #  pkgs.ffmpeg
-          #];
         } // extraShellAttrs);
     };
 }
