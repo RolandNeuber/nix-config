@@ -5,7 +5,7 @@
     ./development
     ./gaming
     ./home_manager.nix
-    ./ladybird.nix
+#    ./ladybird.nix
     ./system
     ./tailscale.nix
     ./user_roland.nix
