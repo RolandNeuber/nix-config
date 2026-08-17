@@ -16,5 +16,7 @@
     ./ladybird.nix
     ./simple-scan.nix
     ./rhythmbox.nix
+    ./rnote.nix
+#    ./xsct.nix
   ];
 }
