@@ -57,6 +57,8 @@ in {
           ms-toolsai.jupyter-keymap
           ms-toolsai.jupyter-renderers
           ms-toolsai.vscode-jupyter-slideshow
+
+          charliermarsh.ruff
         ];
       };
       typst = mkProfile {
