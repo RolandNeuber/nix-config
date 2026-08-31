@@ -13,6 +13,7 @@
     ./freecad.nix
     ./kicad.nix
     ./password_manager
+    ./picard.nix
     ./gnu-octave.nix
 #    ./ladybird.nix
     ./simple-scan.nix
