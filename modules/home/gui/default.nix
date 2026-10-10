@@ -4,6 +4,8 @@
     ./communication
     ./creation
     ./japanese
+    ./activitywatch.nix
+    ./bottles.nix
     ./cinnamon.nix
     ./easytag.nix
 #    ./eduroam.nix

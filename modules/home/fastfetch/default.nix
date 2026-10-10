@@ -1,6 +1,6 @@
 { ... }:
 let
-  logo = import ./Nerv-logo;
+  logo = import ./Seele-logo;
 in {
   programs.fastfetch = {
     enable = true;
